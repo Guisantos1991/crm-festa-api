@@ -1,0 +1,13 @@
+server:
+  port: ${PORT:8080}
+
+spring:
+  application:
+    name: crm-festa-api
+  mongodb:
+    uri: ${MONGODB_URI}
+    database: ${MONGODB_DB}
+
+app:
+  cors:
+    allowed-origins: ${CORS_ALLOWED_ORIGINS:http://localhost:3000}
