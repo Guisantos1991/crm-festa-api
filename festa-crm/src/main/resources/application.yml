@@ -2,11 +2,8 @@ server:
   port: ${PORT:8080}
 
 spring:
-  application:
-    name: crm-festa-api
   mongodb:
-    uri: ${MONGODB_URI}
-    database: ${MONGODB_DB}
+    uri: mongodb://localhost:27017/crudapp
 
 app:
   cors:
