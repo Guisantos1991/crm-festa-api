@@ -24,7 +24,7 @@ public class TransactionService {
         Transaction transaction = transactionMapper.toEntity(transactionDto);
 
         transactionRepository.save(transaction);
-        log.info("Transação salva com sucesso: {}", transaction.toString());
+        log.info("Transação salva com sucesso: {}", transaction);
         return transaction;
     }
 

@@ -8,6 +8,5 @@ import org.mapstruct.Mapper;
 public interface TransactionMapper {
 
     Transaction toEntity(TransactionDto transactionDto);
-    TransactionDto toDto(Transaction transaction);
 
 }
